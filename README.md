@@ -1,20 +1,22 @@
-# Eye Controlled Mouse Using MediaPipe and PyAutoGUI
+# Eye-Controlled Mouse Using Python
 
-This project demonstrates how to control the mouse pointer using eye movements detected by the webcam. The project uses the following libraries:
+This project uses computer vision and Mediapipe to create an eye-controlled mouse. It tracks facial landmarks to move the cursor and detects blinks to simulate mouse clicks.
 
-- `OpenCV` for capturing webcam frames.
-- `MediaPipe` for facial landmark detection (specifically, the Eye Region).
-- `PyAutoGUI` for controlling the mouse pointer.
+---
+
+## Features
+- **Cursor Control**: Move the mouse cursor using eye movements.
+- **Blink Detection**: Simulate mouse clicks by blinking.
+- **Real-Time Processing**: Works in real-time using a webcam.
+
+---
 
 ## Requirements
-
-Make sure you have the following Python libraries installed:
-
+- Python 3.x
 - OpenCV
-- MediaPipe
+- Mediapipe
 - PyAutoGUI
 
-You can install them using `pip`:
-
+Install the dependencies using the following command:
 ```bash
 pip install opencv-python mediapipe pyautogui
